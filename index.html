@@ -1,1 +1,69 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="admaven-placement" content="BqdUEqdn7" />
+    <title>Matcha Scripts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .glow-text {
+        background: linear-gradient(to right, #00f0ff, #d946ef, #7c3aed);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 6s ease infinite;
+      }
+
+      @keyframes glow {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.3s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .back-glow::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, rgba(255, 0, 255, 0.1), transparent 70%);
+        z-index: -1;
+        filter: blur(60px);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+
+    <div class="fade-in max-w-2xl text-center p-8 rounded-3xl bg-white/5 backdrop-blur-md shadow-2xl border border-white/10 relative back-glow">
+      <h1 class="text-5xl md:text-6xl font-extrabold glow-text mb-6">Matcha Scrypts</h1>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Welcome to <span class="text-white font-semibold">Matcha Scrypts</span> — a refined collection of free, powerful Roblox scripts tailored for gamers who want to exploit. No bloat, just pure functionality with a glowing touch.
+      </p>
+    </div>
+
+    <footer class="absolute bottom-4 text-sm text-gray-600 fade-in">
+      &copy; 2025 Matcha Scrypts. All rights reserved.
+    </footer>
+
+  </body>
+</html>
