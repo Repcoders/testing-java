@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Key Checkpoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      background: linear-gradient(135deg, #111827, #000000 50%, #1f2937);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      padding: 0 24px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px 30px 50px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    }
+
+    .container .material-icons {
+      font-size: 36px;
+      color: #cccccc;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      color: #bbbbbb;
+      margin-bottom: 22px;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 14px;
+      color: #aaaaaa;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 15px;
+      background-color: #111;
+      color: white;
+      border: 1px solid #222;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #222;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #555555;
+      user-select: none;
+      font-style: italic;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container" role="main" aria-label="Key Checkpoint Section">
+      <span class="material-icons" aria-hidden="true">vpn_key</span>
+      <h1>Continue to Key Checkpoint</h1>
+      <div class="subtitle">Your support helps keep this project moving forward.</div>
+      <p>Completing this step funds the creator’s work — no spam or distractions.</p>
+      <button class="btn" onclick="goToAd()" aria-label="Continue to checkpoint">Continue</button>
+    </div>
+
+    <div class="footer" aria-hidden="true">
+      © 2025 Matcha Project. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    const links = [
+      "https://voidyy0.neocities.org/matcha-key#",
+      "https://example.com/link2",
+      "https://example.com/link3",
+      "https://example.com/link4",
+      "https://example.com/link5"
+    ];
+
+    function goToAd() {
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const url = links[randomIndex];
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
